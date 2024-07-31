@@ -1,3 +1,56 @@
+Book Management System
+This repository contains the codebase for the Book Management System, designed to streamline the process of providing books and e-content to Learning Centers (LCs) across various districts. The system supports three roles: OKCL Admin, DLC (District Level Control), and LC (Local Control), each with distinct functionalities and access levels.
+
+Key Features
+Dashboard: Comprehensive overview of system activities and metrics.
+Books Management: Add, update, delete, and track books in the inventory.
+Member Management: Manage user accounts and their respective permissions.
+Request Books: View and add book requests to fulfill LC requirements.
+Reports: Generate and view detailed reports on various system operations.
+Messages & Notifications: Facilitate communication between different user roles.
+Help & Support: Access help documents and contact support for assistance.
+Account Settings: Update profile information, change passwords, and manage account details.
+Email Notifications: Send emails to users for various system updates and notifications.
+Technologies Used
+Backend: Laravel PHP Framework
+Frontend: React with Inertia.js
+Database: MySQL
+UI: Tailwind CSS, Material UI
+Getting Started
+Clone the repository
+Install dependencies using Composer and npm
+Configure your .env file with the necessary database and mail settings
+Run migrations to set up the database
+Start the development server
+Contributing
+We welcome contributions to enhance the system. Please follow the standard GitHub flow for contributions:
+
+Fork the repository
+Create a new branch (git checkout -b feature/your-feature)
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature/your-feature)
+Open a Pull Request
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
