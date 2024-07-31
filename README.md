@@ -1,7 +1,3 @@
-Here's a description for your project repository:
-
----
-
 ## Book Management System
 
 This repository contains the codebase for the Book Management System, designed to streamline the process of providing books and e-content to Learning Centers (LCs) across various districts. The system supports three roles: OKCL Admin, DLC (District Level Control), and LC (Local Control), each with distinct functionalities and access levels.
@@ -49,7 +45,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Feel free to customize this description to better fit your project specifics and any additional information you want to include.
 
 
 
