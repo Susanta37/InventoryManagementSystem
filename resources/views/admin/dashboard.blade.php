@@ -1,15 +1,3 @@
-<link rel="stylesheet" href="{{asset('Admin/vendor/bootstrap/css/bootstrap.min.css')}}">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="{{asset('Admin/vendor/font-awesome/css/font-awesome.min.css')}}">
-    <!-- Custom Font Icons CSS-->
-    <link rel="stylesheet" href="{{asset('Admin/css/font.css')}}">
-    <!-- Google fonts - Muli-->
-    <link rel="stylesheet" href="{{asset('Admin/https://fonts.googleapis.com/css?family=Muli:300,400,700')}}">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="{{asset('Admin/css/style.default.css" id="theme-stylesheet')}}">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="{{asset('Admin/css/custom.css')}}">
-
 <x-app-layout>
     <x-slot name="header">
         <h2 class=" text-gray-800 dark:text-gray-200 leading-tight flex justify-between">
@@ -35,29 +23,20 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" @click="selectedItem = 'Books'" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
-                        :class="{'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200': selectedItem === 'Books'}">
+                    <a href="#" @click="selectedItem = 'Inventory'" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
+                        :class="{'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200': selectedItem === 'Inventory'}">
                         <span class="icon">
-                            <ion-icon name="book-outline"></ion-icon>
+                            <ion-icon name="storefront-outline"></ion-icon>
                         </span>
-                        <span class="title">Book Issue</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" @click="selectedItem = 'Members'" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
-                        :class="{'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200': selectedItem === 'Members'}">
-                        <span class="icon">
-                            <ion-icon name="person-add-outline"></ion-icon>
-                        </span>
-                        <span class="title">Member</span>
+                        <span class="title">Inventory</span>
                     </a>
                 </li>
                 <li x-data="{ open: false }">
                     <button @click="open = !open" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 w-full">
                         <span class="icon">
-                            <ion-icon name="git-pull-request-outline"></ion-icon>
+                            <ion-icon name="book-outline"></ion-icon>
                         </span>
-                        <span class="title">Request Books</span>
+                        <span class="title">Books</span>
                         <span>
                             <ion-icon :name="open ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
                         </span>
@@ -71,6 +50,91 @@
                         </li>
                     </ul>
                 </li>
+               
+               
+                <li x-data="{ open: false }">
+                    <button @click="open = !open" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 w-full">
+                        <span class="icon">
+                            <ion-icon name="person-add-outline"></ion-icon>
+                        </span>
+                        <span class="title">Users</span>
+                        <span>
+                            <ion-icon :name="open ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+                        </span>
+                    </button>
+                    <ul x-show="open" x-transition class="mt-2 space-y-2 pl-4">
+                        <li>
+                            <a href="#" @click="selectedItem = 'View Users'" class="block text-gray-600 dark:text-gray-400">View Users</a>
+                        </li>
+                        <li>
+                            <a href="#" @click="selectedItem = 'Add User'" class="block text-gray-600 dark:text-gray-400">Add User</a>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li x-data="{ open: false }">
+                    <button @click="open = !open" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 w-full">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <span class="title">ALC</span>
+                        <span>
+                            <ion-icon :name="open ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+                        </span>
+                    </button>
+                    <ul x-show="open" x-transition class="mt-2 space-y-2 pl-4">
+                        <li>
+                            <a href="#" @click="selectedItem = 'View Classrooms'" class="block text-gray-600 dark:text-gray-400">View Classrooms</a>
+                        </li>
+                        <li>
+                            <a href="#" @click="selectedItem = 'Add Classroom'" class="block text-gray-600 dark:text-gray-400">Add Classroom</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li x-data="{ open: false }">
+                    <button @click="open = !open" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 w-full">
+                        <span class="icon">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">District LC</span>
+                        <span>
+                            <ion-icon :name="open ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+                        </span>
+                    </button>
+                    <ul x-show="open" x-transition class="mt-2 space-y-2 pl-4">
+                        <li>
+                            <a href="#" @click="selectedItem = 'Inventory Report'" class="block text-gray-600 dark:text-gray-400">Inventory Report</a>
+                        </li>
+                        <li>
+                            <a href="#" @click="selectedItem = 'Assignment Report'" class="block text-gray-600 dark:text-gray-400">Assignment Report</a>
+                        </li>
+                        <li>
+                            <a href="#" @click="selectedItem = 'Status Report'" class="block text-gray-600 dark:text-gray-400">Status Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li x-data="{ open: false }">
+                    <button @click="open = !open" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 w-full">
+                        <span class="icon">
+                            <ion-icon name="hourglass-outline"></ion-icon>
+                        </span>
+                        <span class="title">Assignments</span>
+                        <span>
+                            <ion-icon :name="open ? 'chevron-up-outline' : 'chevron-down-outline'"></ion-icon>
+                        </span>
+                    </button>
+                    <ul x-show="open" x-transition class="mt-2 space-y-2 pl-4">
+                        <li>
+                            <a href="#" @click="selectedItem = 'View Assignments'" class="block text-gray-600 dark:text-gray-400">View Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#" @click="selectedItem = 'Assign Book'" class="block text-gray-600 dark:text-gray-400">Assign Book</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                
                 <li x-data="{ open: false }">
                     <button @click="open = !open" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 w-full">
                         <span class="icon">
@@ -117,19 +181,11 @@
                         <span class="icon">
                             <ion-icon name="settings-outline"></ion-icon>
                         </span>
-                        <span class="title">Settings</span>
+                        <span class="title">Manage Profile</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#" @click="selectedItem = 'Password'" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
-                        :class="{'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200': selectedItem === 'Password'}">
-                        <span class="icon">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                        </span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
-                <li>
+               
+                <!-- <li>
                     <a href="#" @click="selectedItem = 'Accounts'" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
                         :class="{'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200': selectedItem === 'Accounts'}">
                         <span class="icon">
@@ -137,8 +193,8 @@
                         </span>
                         <span class="title">Accounts</span>
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="#" @click="selectedItem = 'Email Send'" class="flex items-center justify-start gap-4 text-gray-700 dark:text-gray-300 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
                         :class="{'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200': selectedItem === 'Email Send'}">
                         <span class="icon">
@@ -146,7 +202,7 @@
                         </span>
                         <span class="title">Email Send</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
                 <form method="POST" action="{{ route('logout') }}" class="flex items-center justify-start gap-4 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
                         @csrf
@@ -176,16 +232,23 @@
                             </div>
                         </div> -->
                         <!-- Display Selected Item -->
-                        <div class="text-xl font-semibold">
+                        <!-- <div class="text-xl font-semibold">
                             <h1 x-text="selectedItem"></h1>
                             
                         </div>
-                        <div class="text-xl font-semibold">
+                        --> 
+                        <div class="text-xl font-semibold pb-6">
                             <h1 x-text="selectedItem"></h1>
-                        </div>
-                        <div class="text-xl font-semibold">
-                            <h1 x-text="selectedItem"></h1>
-                        </div>
+                        </div> 
+                        <div x-show="selectedItem === 'Dashboard'" x-cloak>
+                @include('admin.exampleDash')
+            </div>
+                        <div x-show="selectedItem === 'Users'" x-cloak>
+                @include('admin.addUser')
+            </div>
+            <div x-show="selectedItem === 'Settings'" x-cloak>
+                @include('admin.profile-settings')
+            </div>
                        
                 </div>
             </div>

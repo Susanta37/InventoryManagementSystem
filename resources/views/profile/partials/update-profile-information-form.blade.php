@@ -1,3 +1,4 @@
+
 <section>
     <header>
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -60,7 +61,7 @@
             <x-input-error class="mt-2" :messages="$errors->get('photo')" />
             @if ($user->photo)
                 <div class="mt-2">
-                    <img src="{{ Storage::url($user->photo) }}" alt="{{ $user->name }}" class="w-20 h-20 rounded-full">
+                    <img src="{{Storage::url($user->photo)}}" alt="{{ $user->name }}" class="w-20 h-20 rounded-full">
                 </div>
             @endif
         </div>

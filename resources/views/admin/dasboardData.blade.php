@@ -398,7 +398,7 @@
               <div class="row d-flex align-items-center">                   
                 <div class="col-lg-4 d-flex align-items-center">
                   <div class="order">5th</div>
-                  <div class="avatar"> <img src="{{asset('img/avatar-2.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Alexander Shelby</strong><span class="d-block">@alexshelby</span></a>
+                  <div class="avatar"> <img src="{{asset('Admin/img/avatar-2.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Alexander Shelby</strong><span class="d-block">@alexshelby</span></a>
                 </div>
                 <div class="col-lg-4 text-center">
                   <div class="contributions">320 Contributions</div>
@@ -416,7 +416,7 @@
               <div class="row d-flex align-items-center">                   
                 <div class="col-lg-4 d-flex align-items-center">
                   <div class="order">6th</div>
-                  <div class="avatar"> <img src="{{asset('img/avatar-6.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Arther Kooper</strong><span class="d-block">@artherkooper</span></a>
+                  <div class="avatar"> <img src="{{asset('Admin/img/avatar-6.jpg')}}" alt="..." class="img-fluid"></div><a href="#" class="name"><strong class="d-block">Arther Kooper</strong><span class="d-block">@artherkooper</span></a>
                 </div>
                 <div class="col-lg-4 text-center">
                   <div class="contributions">170 Contributions</div>
@@ -525,19 +525,19 @@
                         <div class="status online"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Nadia Halsey</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">9:30am</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="{{asset('img/avatar-2.jpg')}}" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('Admin/img/avatar-2.jpg')}}" alt="..." class="img-fluid">
                         <div class="status away"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Peter Ramsy</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">7:40am</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="{{asset('img/avatar-1.jpg')}}" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('Admin/img/avatar-1.jpg')}}" alt="..." class="img-fluid">
                         <div class="status busy"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Sam Kaheil</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">6:55am</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="{{asset('img/avatar-5.jpg')}}" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('Admin/img/avatar-5.jpg')}}" alt="..." class="img-fluid">
                         <div class="status offline"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Sara Wood</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">10:30pm</small></div></a><a href="#" class="message d-flex align-items-center">
-                      <div class="profile"><img src="{{asset('img/avatar-1.jpg')}}" alt="..." class="img-fluid">
+                      <div class="profile"><img src="{{asset('Admin/img/avatar-1.jpg')}}" alt="..." class="img-fluid">
                         <div class="status online"></div>
                       </div>
                       <div class="content">   <strong class="d-block">Nader Magdy</strong><span class="d-block">lorem ipsum dolor sit amit</span><small class="date d-block">9:47pm</small></div></a></div>
@@ -590,13 +590,13 @@
       </div>
     </div>
     <!-- JavaScript files-->
-    <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('vendor/popper.js/umd/popper.min.js')}}"> </script>
-    <script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('vendor/jquery.cookie/jquery.cookie.js')}}"> </script>
-    <script src="{{asset('vendor/chart.js/Chart.min.js')}}"></script>
-    <script src="{{asset('vendor/jquery-validation/jquery.validate.min.js')}}"></script>
-    <script src="{{asset('js/charts-home.js')}}"></script>
-    <script src="{{asset('js/front.js')}}"></script>
+    <script src="{{asset('Admin/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('Admin/vendor/popper.js/umd/popper.min.js')}}"> </script>
+    <script src="{{asset('Admin/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('Admin/vendor/jquery.cookie/jquery.cookie.js')}}"> </script>
+    <script src="{{asset('Admin/vendor/chart.js/Chart.min.js')}}"></script>
+    <script src="{{asset('Admin/vendor/jquery-validation/jquery.validate.min.js')}}"></script>
+    <script src="{{asset('Admin/js/charts-home.js')}}"></script>
+    <script src="{{asset('Admin/js/front.js')}}"></script>
   </body>
 </html>

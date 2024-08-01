@@ -27,6 +27,9 @@ Route::get('/dlc/dashboard', function () {
     return view('dlc.dashboard');
 })->middleware(['auth', 'verified','dlc'])->name('dlc.dashboard');
 
+Route::get('/settings', function () {
+    return view('profile-setting');
+})->middleware(['auth', 'verified'])->name('settings');
 
 
 #Route::get('/admin/dashboard',[HomeController::class,'index'])->middleware(['auth','okcl']);
